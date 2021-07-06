@@ -1,0 +1,135 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%; // got 10px 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    font-size: $browser-context + px;
+    background-color: var(--clr-primary);
+    color: var(clr-dark);
+    line-height: 1.3;
+    &.lock-scroll {
+        overflow: hidden;
+    }
+    &.modal-hidden {
+        overflow: hidden;
+    }
+}
+
+// Wrappers, containers
+.outer-container {
+    max-width: $maxContainer;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner-container {
+    max-width: $minContainer;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+// Main
+.main {
+    flex: 1 1 auto;
+}
+
+// Flexbox
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-fe {
+        justify-content: flex-end;
+    }
+    &-jc-fs {
+        justify-content: flex-start;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-ai-fs {
+        align-items: flex-start;
+    }
+    &-fd-col {
+        flex-direction: column;
+    }
+    &-fd-row {
+        flex-direction: row;
+    }
+}
+
+// Title in section
+.section-title {
+    font-weight: var(--fw-black);
+    font-size: var(--fs-h3);
+    color: var(--clr-dark);
+    line-height: 5.6rem;
+}
+
+// Subtitle
+.small-title {
+    font-weight: var(--fw-black);
+    font-size: var(--fs-h4);
+    line-height: 2.3rem;
+    text-align: center;
+    color: var(--clr-dark);
+}
+
+// Text regular
+.text {
+    font-weight: var(--fw-reg);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--clr-gray);
+}
+
+// Images
+img {
+    max-width: 100%;
+}
+
+//---  Media
+@media screen and (max-width: 1365px) {
+    .outer-container {
+        max-width: 900px;
+    }
+    .inner-container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .outer-container {
+        max-width: 700px;
+    }
+    .inner-container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .outer-container {
+        max-width: 600px;
+    }
+    .inner-container {
+        max-width: 600px;
+    }
+}

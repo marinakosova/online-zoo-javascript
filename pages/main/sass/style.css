@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,800=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:800=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:600=swap");
+:root {
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Montserrat Alternates', sans-serif;
+  --ff-third: 'Inter', sans-serif;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-light: #fff;
+  --clr-dark: #000;
+  --clr-accent: #F58021;
+  --clr-navy: #20113D;
+  --clr-turquoise: #00A092;
+  --fs-h1: 8.2rem;
+  --fs-h2: 5.4rem;
+  --fs-h3: 4.2rem;
+  --fs-body: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  line-height: 1.3;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

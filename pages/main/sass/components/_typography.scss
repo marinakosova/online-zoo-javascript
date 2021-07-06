@@ -1,0 +1,29 @@
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --fw-reg: 400;
+    --fw-md: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+    --fs-h2: 8.9rem;
+    --fs-h3: 4.8rem;
+    --fs-h4: 2rem;
+    --fs-h5: 1.8rem;
+    --fs-body: 1.6rem;
+}
+
+//---  Font
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900);
+// @media (max-width: 640px) 
+//      :root {
+//         --fs-h1: 4.5rem;
+//         --fs-h2: 3.75rem;
+//         --fs-h3: 1.5rem;
+//     }
+// }
+// @media (max-width: 320px) {
+//      :root {
+//         --fs-h1: 4.5rem;
+//         --fs-h2: 3.75rem;
+//         --fs-h3: 1.5rem;
+//     }
+// }

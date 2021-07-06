@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an online zoo that allows you to see pets in any of the zoos or in the wild, where there are live cameras.">
+
+    <title>Donate</title>
+
+    <link rel="icon" type="image/svg" sizes="32x32" href="../../assets/icons/donate.svg">
+    <link rel="stylesheet" href="../main/css/style.css">
+</head>
+
+<body>
+    <!-- FAVICON FROM FLATICOM -->
+    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+    <div class="popup flex flex-jc-c flex-ai-c">
+        <div class="popup__wrapper inner-container flex">
+            <div class="popup__semi-hero">
+                <img src="../../assets/images/pop-up/donate-hero.png" alt="Forest with animal">
+            </div>
+            <div class="popup__donate">
+                <div class="donate__body flex flex-fd-col">
+                    <div>
+                        <h3 class="donate__body__title">Donate For Your Animal</h3>
+                    </div>
+                    <div class="donate__body__form">
+                        <form class="donate__form flex">
+                            <!-- top fields -->
+                            <div class="donate__form__about flex flex-fd-col">
+                                <div class="select">
+                                    <select name="select-animal">
+                                      <option selected disabled></option>
+                                      <option value="1">Eagle</option>
+                                      <option value="2">Panda</option>
+                                      <option value="3">Crocodile</option>
+                                      <option value="4">Gorilla</option>
+                                    </select>
+                                    <span class="top-level-text top-level-select">Choose an animal</span>
+                                </div>
+
+                                <!-- About you -->
+                                <div class="donate__about__input section-title">
+                                    <label>About you</label>
+                                </div>
+
+                                <!-- Name -->
+                                <div class="donate__about__input">
+                                    <input type="text" name="donate-name" required></input>
+                                    <span class="top-level-text">Name</span>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="donate__about__input donate__about__email">
+                                    <input type="email" name="donate-email" class="donate-email" required>
+                                    <span class="top-level-text">Email</span>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="donate__about__input donate__about__phone flex">
+                                    <div class="phone-select">
+                                        <select name="select-phone">
+                                          <option selected>+7</option>
+                                          <option value="1">+1</option>
+                                          <option value="2">+44</option>
+                                          <option value="3">+359</option>
+                                        </select>
+                                        <span class="top-level-text top-level-select">Phone</span>
+                                    </div>
+                                    <div>
+                                        <input type="number" name="donate-number" class="donate-number">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bottom fields -->
+                            <div class="donate__form__checkout">
+                                <!-- to donate -->
+                                <div class="donate__about__input donate__input__amount">
+                                    <input type="number" name="donate-amount" class="donate-amount" required>
+                                    <span class="top-level-text">To donate</span>
+                                </div>
+                                <!-- Checkout -->
+                                <div class="donate__about__input section-title">
+                                    <label>Checkout</label>
+                                </div>
+
+                                <!-- Card -->
+                                <div class="donate__about__input">
+                                    <input type="number" name="donate-card" required></input>
+                                    <span class="top-level-text">Card number</span>
+                                </div>
+
+                                <!-- Date -->
+                                <div class="donate__about__input donate__about__date flex">
+                                    <div class="month-select">
+                                        <select name="select-month">
+                                          <option selected></option>
+                                          <option value="1">01</option>
+                                          <option value="2">02</option>
+                                          <option value="3">03</option>
+                                          <option value="4">04</option>
+                                          <option value="5">05</option>
+                                          <option value="6">06</option>
+                                          <option value="7">07</option>
+                                          <option value="8">08</option>
+                                          <option value="9">09</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="year-select">
+                                        <select name="select-month">
+                                          <option selected></option>
+                                          <option value="1">2021</option>
+                                          <option value="2">2022</option>
+                                          <option value="3">2023</option>
+                                          <option value="4">2024</option>
+                                          <option value="5">2025</option>
+                                          <option value="6">2026</option>
+                                        </select>
+                                    </div>
+                                    <span class="top-level-text top-level-select">Expiry date</span>
+                                </div>
+
+                                <!-- CVC -->
+                                <div class="donate__about__input">
+                                    <input type="number" name="donate-cvc" class="donate-cvc" required>
+                                    <span class="top-level-text">CVC</span>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="donate__agreement">
+                        <div class="donate__agreement__text">
+                            <p>If don’t cancel your subscription before the trial ends on April 15, 2021, you agree that you will automatically be charged</p>
+                        </div>
+                        <div class="section-button__block flex flex-jc-c">
+                            <button class="feedback-button feedback-invalid section-button" type="submit">Donate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

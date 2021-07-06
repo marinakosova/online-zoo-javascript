@@ -1,0 +1,13 @@
+[data-theme="dark"] {
+  --clr-primary: #333;
+  --clr-dark: #FEFEFE;
+  --clr-gray: #F2F2F2;
+  --clr-light: #4F4F4F;
+  --clr-testim-card-bg: #3C3C3C;
+  --clr-toggle-theme: #4F4F4F;
+  --clr-map-theme: #E1E1E1;
+  --clr-map-area-active: #333333;
+  --clr-map-active-strokes: #FEFEFE;
+  --clr-header-theme: #3C3C3C; }
+
+/*# sourceMappingURL=dark-theme.css.map */

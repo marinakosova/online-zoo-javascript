@@ -1,0 +1,33 @@
+// Only global variables
+// --- Brand Colors, Fonts, Font-sizes
+:root {
+    --clr-primary: #FEFEFE;
+    --clr-light: #F2F2F2;
+    --clr-dark: #333;
+    --clr-gray: #4F4F4F;
+    --clr-accent: #4BD8B5;
+    --clr-testim-card-bg: #FEFEFE;
+    --clr-toggle-theme: #F2F2F2;
+    --clr-map-theme: #333333;
+    --clr-map-area-active: #DADADA;
+    --clr-map-active-strokes: #333333;
+    --clr-header-theme: #FFFFFF;
+}
+
+//---  Width Containers
+$maxContainer: 1660px;
+$minContainer: 1200px;
+// --- Media queries
+$desktop: 1200px;
+$tablet: 640px;
+$mobile: 320px;
+//@media screen and (max-width: $tablet)
+// --- Px to em function for margins/paddings
+$browser-context: 16; // Default
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+//---  Spacing
+$section-paddings: em(100);
+$padding-small: 30px;

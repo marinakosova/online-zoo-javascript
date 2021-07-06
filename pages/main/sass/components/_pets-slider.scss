@@ -1,0 +1,192 @@
+//---  Common sliders
+.slider__title {
+    padding-bottom: $padding-small;
+    text-align: center;
+}
+
+.slider__container {
+    overflow: hidden;
+    padding-bottom: $padding-small;
+    //Class to add to the arrow when inactive if slider is not infinite
+    .icon-left path {
+        fill: #828282;
+    }
+    .icon-right path {
+        fill: #828282;
+    }
+    .control {
+        padding: 0 20px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+        &.slider__button__left {
+            left: 0;
+            right: auto;
+            .control-left {
+                fill: var(--clr-dark);
+            }
+            .control-left.slide-disabled {
+                fill: #828282;
+            }
+            .control-left-theme {
+                fill: var(--clr-dark);
+            }
+        }
+        &.slider__button__right {
+            left: auto;
+            right: 0;
+            .control-right {
+                fill: var(--clr-dark);
+            }
+            .control-right.slide-disabled {
+                fill: #828282;
+            }
+            .control-right-theme {
+                fill: var(--clr-dark);
+            }
+        }
+        .arrow {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-100%);
+            &.slider__button__right {
+                right: 40%;
+            }
+            &.slider__button__left {
+                left: 40%;
+            }
+        }
+    }
+    .slider__item {
+        position: relative;
+        z-index: 2;
+        &:hover {
+            .slider__item__text {
+                opacity: 1;
+                height: 100%;
+                top: 0;
+                bottom: 100%;
+            }
+        }
+        &.slider__item_active {
+            .slider__item__text {
+                opacity: 1;
+                height: 100%;
+                top: 0;
+                bottom: 100%;
+            }
+        }
+        .slider__item__text {
+            position: absolute;
+            top: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: calc(100% - 30px);
+            height: 0;
+            padding: 0 em(22) em(45) em(22);
+            transition: 0.5s ease;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+            border-radius: 5px;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: #FFF;
+            opacity: 0;
+            p {
+                padding-bottom: $padding-small/2;
+            }
+            .slider__button {
+                .slider-button-left,
+                .slider-button-right {
+                    background: transparent;
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                    font-weight: var(--fw-md);
+                    text-transform: uppercase;
+                    color: #FFF;
+                }
+                .slider-button-left {
+                    padding-right: em(10);
+                    & span {
+                        margin-right: em(3);
+                        padding: em(6.5) em(9) em(6.5) em(10);
+                        border: 1px solid #FFF;
+                        border-radius: 50%;
+                    }
+                    &:hover {
+                        color: var(--clr-accent);
+                        & span {
+                            border: 1px solid var(--clr-accent);
+                            & svg path {
+                                fill: var(--clr-accent);
+                            }
+                        }
+                    }
+                }
+                .slider-button-right {
+                    width: 74px;
+                    height: 24px;
+                    color: #FFF;
+                    & span {
+                        margin-right: em(3);
+                        padding: em(3.5) em(9);
+                        border: 1px solid #FFF;
+                        border-radius: 50%;
+                    }
+                    &:hover {
+                        color: var(--clr-accent);
+                        & span {
+                            border: 1px solid var(--clr-accent);
+                            & svg path {
+                                fill: var(--clr-accent);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider__track {
+        transition: 0.4s ease;
+        left: 0;
+        position: relative;
+        .slider__item {
+            padding-right: 30px;
+            cursor: pointer;
+            & img {
+                min-width: 278px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+//---  Media 
+@media screen and (max-width: 1365px) {
+    .slider__container {
+        .slider__track {
+            .slider__item {
+                padding-right: 20px;
+                & img {
+                    min-width: 210px;
+                    height: auto;
+                }
+                .slider__item__text {
+                    width: calc(100% - 20px);
+                    padding: 0 em(8) em(45) em(8);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slider__container {
+        .control {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

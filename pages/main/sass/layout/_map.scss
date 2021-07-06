@@ -1,0 +1,371 @@
+.map {
+    padding: $section-paddings 0;
+    background-color: var(--clr-light);
+    .map__title {
+        text-align: center;
+        h3 {
+            padding-bottom: em(50);
+        }
+    }
+    .map__image {
+        position: relative;
+        margin-bottom: $padding-small;
+        svg {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            .svg-segment:hover {
+                fill: #DADADA;
+                stroke: black;
+                stroke-width: 2;
+                transition: 0.4s;
+            }
+            .map-theme {
+                fill: var(--clr-map-theme);
+            }
+            .map-theme-active {
+                fill: var(--clr-map-area-active);
+            }
+            .map-active-stroke {
+                stroke: var(--clr-map-active-strokes);
+                stroke-width: ceil($number: 3);
+            }
+        }
+        .map__pin {
+            position: absolute;
+            top: 15%;
+            bottom: 0;
+            left: 12%;
+            right: 0;
+            background-image: url("../../../../assets/images/map/marker.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 67px;
+            height: 95px;
+            filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
+            cursor: pointer;
+            &:hover {
+                background-image: url("../../../../assets/images/map/marker-red.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 67px;
+                height: 95px;
+                filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
+                cursor: pointer;
+                transition: 0.5s ease;
+                z-index: 100;
+                & .tooltip {
+                    display: block;
+                }
+            }
+            .map__pin__img {
+                position: absolute;
+                top: 13%;
+                bottom: 0;
+                left: 18%;
+                right: 0;
+                background-image: url("../../../../assets/images/map/eagle.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 43px;
+                height: 43px;
+            }
+        }
+        .map__pin_second {
+            top: 20%;
+            bottom: 0;
+            left: 75%;
+            .map__pin__img {
+                background-image: url("../../../../assets/images/map/panda.png");
+            }
+        }
+    }
+}
+
+.tooltip {
+    display: none;
+    padding: em(40);
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 436px;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    border-radius: 8px;
+    background-color: var(--clr-primary);
+    z-index: 1000;
+    &:hover {
+        .tooltip__btn {
+            display: inline-block;
+        }
+    }
+    .tooltip__btn {
+        width: 115px;
+        height: 29px;
+        display: none;
+        text-decoration: none;
+        background: transparent;
+        font-size: 1.3rem;
+        line-height: 15px;
+        font-weight: var(--fw-black);
+        color: var(--clr-accent);
+        border: 1px solid var(--clr-accent);
+        border-radius: 3px;
+        & svg {
+            width: 5px;
+            height: 5px;
+        }
+    }
+    .section-button__block {
+        .section-button {
+            width: 115px;
+            height: 26px;
+            background: transparent;
+            color: var(--clr-accent);
+            font-weight: var(--fw-black);
+            font-size: 1.3rem;
+            line-height: 15px;
+            text-transform: none;
+            & img {
+                padding: em(6);
+                margin: em(4);
+                border: 1px solid var(--clr-accent);
+                border-radius: 50%;
+            }
+        }
+    }
+    .tooltip__heading {
+        margin-bottom: em(15);
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: var(--fw-black);
+        font-size: var(--fs-h5);
+        color: var(--clr-dark);
+        line-height: 21px;
+    }
+    .tooltip__img {
+        & img {
+            min-width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .tooltip__info {
+        margin-left: 20px;
+        text-align: left;
+    }
+    .tooltip__population {
+        &::before {
+            content: "Population: ";
+            font-weight: var(--fw-md);
+            color: var(--clr-dark);
+        }
+        padding-bottom: 15px;
+        font-weight: var(--fw-reg);
+        font-size: 1.4rem;
+        line-height: 16px;
+        color: var(--clr-dark);
+    }
+    .tooltip__region {
+        margin-bottom: 5px;
+        font-weight: var(--fw-reg);
+        font-size: 1.4rem;
+        line-height: 16px;
+        color: var(--clr-dark);
+        &::before {
+            content: "Region: ";
+            font-weight: var(--fw-md);
+            color: var(--clr-dark);
+        }
+    }
+}
+
+.tooltip_second {
+    left: -400px;
+}
+
+@media screen and (max-width: 960px) {
+    .map {
+        .map__image {
+            .map__pin {
+                top: 20%;
+            }
+            .map__pin_second {
+                top: 22%;
+                left: 70%;
+            }
+        }
+    }
+}
+
+// Media
+@media screen and (max-width: 1365px) {
+    .map {
+        .map__image {
+            .map__pin {
+                top: 10%;
+            }
+            .map__pin_second {
+                top: 12%;
+                left: 73%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .map {
+        .map__image {
+            .map__pin {
+                top: 2%;
+            }
+            .map__pin_second {
+                top: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .map {
+        .map__image {
+            .map__pin {
+                top: -5%;
+            }
+            .map__pin_second {
+                top: -2%;
+                left: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .map {
+        padding: em(50) 0;
+        .map__container {
+            .map__image {
+                .map__pin {
+                    top: 10%;
+                    left: 15%;
+                    width: 34px;
+                    height: 47px;
+                    &:hover {
+                        background-image: url("../../../../assets/images/map/small-red-pin.svg");
+                        background-repeat: no-repeat;
+                        width: 34px;
+                        height: 47px;
+                    }
+                    .map__pin__img {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .map__pin_second {
+                    top: 15%;
+                    left: 75%;
+                    .map__pin__img {
+                        background-image: url("../../../../assets/images/map/panda.png");
+                    }
+                }
+            }
+            .map__title {
+                h3 {
+                    padding-bottom: em(30);
+                }
+                .section-title {
+                    font-size: 3.6rem;
+                    line-height: 4.2rem;
+                }
+            }
+        }
+    }
+    .tooltip {
+        top: 40px;
+        left: 15px;
+    }
+    .tooltip_second {
+        left: -415px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .map {
+        .map__image {
+            .map__pin {
+                top: -8%;
+            }
+            .map__pin_second {
+                top: -5%;
+            }
+        }
+    }
+    .tooltip {
+        width: 238px;
+        padding: em(15);
+        .tooltip__info {
+            margin-left: em(7);
+            .tooltip__heading {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
+            .tooltip__population {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+            }
+            .tooltip__region {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+            }
+        }
+        .tooltip__img {
+            & img {
+                min-width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .tooltip_second {
+        left: -218px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .map {
+        .map__container {
+            .map__image {
+                .map__pin {
+                    top: 4%;
+                }
+                .map__pin_second {
+                    top: 7%;
+                    left: 73%;
+                }
+            }
+            .map__title {
+                h3 {
+                    padding-bottom: em(30);
+                }
+                .section-title {
+                    font-size: 3.6rem;
+                    line-height: 4.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .map {
+        .map__container {
+            .map__image {
+                .map__pin {
+                    top: 0;
+                }
+                .map__pin_second {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

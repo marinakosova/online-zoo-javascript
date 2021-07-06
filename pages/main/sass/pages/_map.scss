@@ -1,0 +1,224 @@
+.main {
+    background-color: var(--clr-light);
+    .favorite {
+        padding: em(65) 0 0 0;
+        .favorite__content {
+            .favorite__title {
+                margin-bottom: $padding-small;
+                text-align: center;
+            }
+            .favorite__text {
+                max-width: 80%;
+                margin: 0 auto;
+                padding-bottom: em(60);
+            }
+        }
+    }
+    .map-carousel {
+        position: relative;
+        .favorite__carousel {
+            position: relative;
+            min-height: 157px;
+            margin: 0 auto;
+            margin-bottom: em(30);
+            max-width: 1070px;
+            overflow: hidden;
+            .favorite__carousel__container {
+                max-width: 1000px;
+                position: relative;
+                transition: 0.6s ease;
+                .favorite__carousel__item {
+                    padding: 0 11px;
+                    flex: 0 0 108px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    cursor: pointer;
+                    .favorite__carousel__img {
+                        .favorite__carousel__image {
+                            width: 108px;
+                            height: 108px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            max-width: inherit;
+                        }
+                    }
+                }
+                .favorite__item_active {
+                    width: 157px;
+                    height: 157px;
+                    margin: 0;
+                    flex: 0 0 157px;
+                    padding: 10px;
+                    background: url('../../../../assets/icons/border-active.svg');
+                    background-size: 100% 100%;
+                    cursor: default;
+                    transition: background 0.6s ease;
+                    .favorite__carousel__img {
+                        .favorite__carousel__image {
+                            width: 137px;
+                            height: 137px;
+                        }
+                    }
+                }
+            }
+        }
+        .control {
+            margin: 0 20px;
+            position: absolute;
+            //width: 15%;
+            top: 0;
+            bottom: 0;
+            cursor: pointer;
+            &.slider__button__left {
+                left: 0;
+                right: auto;
+                .btn-left {
+                    fill: var(--clr-dark);
+                }
+                .btn-left.slide-disabled {
+                    fill: #828282;
+                }
+                .btn-left-theme {
+                    fill: var(--clr-dark);
+                }
+            }
+            &.slider__button__right {
+                left: auto;
+                right: 0;
+                .btn-right {
+                    fill: var(--clr-dark);
+                }
+                .btn-right.slide-disabled {
+                    fill: #828282;
+                }
+                .btn-right-theme {
+                    fill: var(--clr-dark);
+                }
+            }
+            .arrow {
+                display: block;
+                position: absolute;
+                top: 33%;
+                transform: translateY(-100%);
+                &.slider__button__right {
+                    right: 0;
+                }
+                &.slider__button__left {
+                    left: 0;
+                }
+            }
+        }
+        .section-range {
+            margin-bottom: em(80);
+        }
+    }
+    .map {
+        padding: 0;
+        margin-bottom: em(100);
+        background-color: var(--clr-light);
+        .map__image {
+            & svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .main {
+        .map-carousel {
+            .favorite__carousel {
+                max-width: 670px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        .outer-container {
+            max-width: 900px;
+        }
+    }
+    .main {
+        .favorite {
+            padding: em(150) 0 0 0;
+            .favorite__content {
+                .favorite__text {
+                    max-width: 100%;
+                    margin: 10px auto;
+                    padding-bottom: em(30);
+                }
+            }
+        }
+        .map-carousel {
+            &.outer-container {
+                max-width: 900px;
+                padding: 0 em(10);
+            }
+            .favorite__carousel {
+                max-width: 540px;
+                .favorite__carousel__container {
+                    .favorite__carousel__item {
+                        padding: 0 9px;
+                    }
+                    .favorite__item_active {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main {
+        .favorite {
+            padding: em(135) 0 0 0;
+            .favorite__content {
+                padding: 0 em(10);
+                .section-title {
+                    margin-bottom: 0;
+                    font-size: 2.4rem;
+                    line-height: 28px;
+                }
+                .favorite__text {
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                }
+            }
+        }
+        .map-carousel {
+            .favorite__carousel {
+                max-width: 235px;
+                .favorite__carousel__container {
+                    //max-width: 240px;
+                    .favorite__carousel__item {
+                        padding: 0 em(6);
+                        flex: 0 0 60px;
+                        &.favorite__item_active {
+                            width: 85px;
+                            height: 85px;
+                            flex: 0 0 85px;
+                            padding: 5px;
+                            .favorite__carousel__img {
+                                .favorite__carousel__image {
+                                    width: 75px;
+                                    height: 75px;
+                                }
+                            }
+                        }
+                        .favorite__carousel__img {
+                            .favorite__carousel__image {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

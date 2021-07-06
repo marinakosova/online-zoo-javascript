@@ -1,0 +1,28 @@
+// --- Template for accent buttons
+%btn {
+    width: 245px;
+    height: 55px;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: var(--fw-black);
+    font-size: var(--fs-h5);
+    text-transform: uppercase;
+    // @extend %btn;
+    & img {
+        padding: em(9) em(9) em(9) em(10);
+        margin: em(5);
+        border: 1px solid #FFF;
+        border-radius: 50%;
+    }
+    &:hover {
+        background: var(--clr-accent);
+    }
+}
+
+//---  Common buttons
+.section-button__block {
+    .section-button {
+        @extend %btn;
+    }
+}
