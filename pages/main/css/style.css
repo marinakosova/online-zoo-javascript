@@ -205,8 +205,7 @@ h6 {
       display: block;
       visibility: visible; }
     .hero-top__carousel .hero-top__carousel__container .item__description {
-      position: relative;
-      cursor: pointer; }
+      position: relative; }
       .hero-top__carousel .hero-top__carousel__container .item__description img {
         min-width: 140px;
         width: -webkit-fill-available;
@@ -524,8 +523,7 @@ h6 {
     left: 0;
     position: relative; }
     .slider__container .slider__track .slider__item {
-      padding-right: 30px;
-      cursor: pointer; }
+      padding-right: 30px; }
       .slider__container .slider__track .slider__item img {
         min-width: 278px;
         border-radius: 5px; }
@@ -1087,7 +1085,7 @@ h6 {
       bottom: 0;
       left: 12%;
       right: 0;
-      background-image: url("../../../../assets/images/map/marker.svg");
+      background-image: url("../images/map/marker.svg");
       background-size: contain;
       background-repeat: no-repeat;
       width: 67px;
@@ -1095,7 +1093,7 @@ h6 {
       filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
       cursor: pointer; }
       .map .map__image .map__pin:hover {
-        background-image: url("../../../../assets/images/map/marker-red.svg");
+        background-image: url("../images/map/marker-red.svg");
         background-size: contain;
         background-repeat: no-repeat;
         width: 67px;
@@ -1112,7 +1110,7 @@ h6 {
         bottom: 0;
         left: 18%;
         right: 0;
-        background-image: url("../../../../assets/images/map/eagle.png");
+        background-image: url("../images/map/eagle.png");
         background-size: contain;
         background-repeat: no-repeat;
         width: 43px;
@@ -1122,7 +1120,7 @@ h6 {
       bottom: 0;
       left: 75%; }
       .map .map__image .map__pin_second .map__pin__img {
-        background-image: url("../../../../assets/images/map/panda.png"); }
+        background-image: url("../images/map/panda.png"); }
 
 .tooltip {
   display: none;
@@ -1238,7 +1236,7 @@ h6 {
       width: 34px;
       height: 47px; }
       .map .map__container .map__image .map__pin:hover {
-        background-image: url("../../../../assets/images/map/small-red-pin.svg");
+        background-image: url("../images/map/small-red-pin.svg");
         background-repeat: no-repeat;
         width: 34px;
         height: 47px; }
@@ -1249,7 +1247,7 @@ h6 {
       top: 15%;
       left: 75%; }
       .map .map__container .map__image .map__pin_second .map__pin__img {
-        background-image: url("../../../../assets/images/map/panda.png"); }
+        background-image: url("../images/map/panda.png"); }
     .map .map__container .map__title h3 {
       padding-bottom: 1.875em; }
     .map .map__container .map__title .section-title {
@@ -1384,7 +1382,7 @@ h6 {
   position: relative;
   min-height: 940px;
   padding-top: 210px;
-  background-image: url("../../../../assets/images/hero-top/hero.jpg");
+  background-image: url("../images/hero-top/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
@@ -1471,7 +1469,7 @@ h6 {
     width: 245px;
     height: 245px;
     padding: 3.125em;
-    background: url("../../../../assets/images/pay/pay-border.svg");
+    background: url("../images/pay/pay-border.svg");
     background-size: 100% 100%;
     text-align: center; }
     .main .pay .pay__column__outer h4 {
@@ -1512,7 +1510,8 @@ h6 {
         border-radius: 5px;
         opacity: 1;
         visibility: visible;
-        transition: 0.4s ease; }
+        transition: 0.4s ease;
+        cursor: pointer; }
         .main .testimonials .testimonials__slider__container .testimonials__slider__track .testimonials__slider__item img {
           padding-bottom: 15px; }
         .main .testimonials .testimonials__slider__container .testimonials__slider__track .testimonials__slider__item h4 {
@@ -1789,7 +1788,7 @@ h6 {
               margin-bottom: 10px;
               flex-shrink: 0;
               padding: 10px;
-              background: url("../../../../assets/icons/border-active.svg");
+              background: url("../icons/border-active.svg");
               background-size: 100% 100%;
               cursor: default;
               transition: background 0.6s ease; }
@@ -1961,7 +1960,7 @@ h6 {
           margin: 0;
           flex: 0 0 157px;
           padding: 10px;
-          background: url("../../../../assets/icons/border-active.svg");
+          background: url("../icons/border-active.svg");
           background-size: 100% 100%;
           cursor: default;
           transition: background 0.6s ease; }

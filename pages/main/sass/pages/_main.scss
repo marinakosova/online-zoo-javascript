@@ -4,7 +4,7 @@
                 position: relative;
                 min-height: 940px;
                 padding-top: 210px;
-                background-image: url('../../../../assets/images/hero-top/hero.jpg');
+                background-image: url('../images/hero-top/hero.jpg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -148,7 +148,7 @@
                     width: 245px;
                     height: 245px;
                     padding: em(50);
-                    background: url('../../../../assets/images/pay/pay-border.svg');
+                    background: url('../images/pay/pay-border.svg');
                     background-size: 100% 100%;
                     //border: 3px solid var(--clr-accent);
                     //border-radius: 50%;
@@ -189,41 +189,8 @@
                     width: 615px;
                     height: 350px;
                     position: relative;
-                    //overflow: hidden;
-                    // .control {
-                    //     position: absolute;
-                    //     width: 15%;
-                    //     top: 0;
-                    //     bottom: 0;
-                    //     cursor: pointer;
-                    //     &.testimonials__button__left {
-                    //         left: 0;
-                    //         right: auto;
-                    //     }
-                    //     &.testimonials__button__right {
-                    //         left: auto;
-                    //         right: 0;
-                    //     }
-                    //     .arrow {
-                    //         display: block;
-                    //         position: absolute;
-                    //         top: 55%;
-                    //         transform: translateY(-100%);
-                    //         &.testimonials__button__right {
-                    //             right: 40%;
-                    //         }
-                    //         &.testimonials__button__left {
-                    //             left: 40%;
-                    //         }
-                    //     }
-                    // }
                     .testimonials__slider__track {
                         padding-bottom: $padding-small;
-                        // &>* {
-                        //margin: 0 0 0 30px;
-                        // }
-                        //margin: 0 0 0 -30px;
-                        //width: calc(100%+30px);
                         .testimonials__slider__item {
                             top: 3%;
                             left: 3%;
@@ -238,6 +205,7 @@
                             opacity: 1;
                             visibility: visible;
                             transition: 0.4s ease;
+                            cursor: pointer;
                             img {
                                 padding-bottom: $padding-small/2;
                             }
@@ -277,18 +245,6 @@
         }
         
         //---  Media 
-        @media screen and (max-width: 1465px) {
-            //---  Testimonials section
-            // .testimonials {
-            //     .testimonials__slider__container {
-            //         .control {
-            //             display: none;
-            //             visibility: hidden;
-            //         }
-            //     }
-            // }
-        }
-        
         @media screen and (max-width: 1365px) {
             .main {
                 //---  Hero section
@@ -304,16 +260,6 @@
                         padding: 0 em(80);
                     }
                 }
-                //---  Testimonials section
-                // .testimonials {
-                //     .testimonials__slider__container {
-                //         .testimonials__slider__track {
-                //             .testimonials__slider__item {
-                //                 min-width: 440px;
-                //             }
-                //         }
-                //     }
-                // }
             }
         }
         

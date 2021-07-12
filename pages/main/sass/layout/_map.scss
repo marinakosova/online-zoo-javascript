@@ -37,7 +37,7 @@
             bottom: 0;
             left: 12%;
             right: 0;
-            background-image: url("../../../../assets/images/map/marker.svg");
+            background-image: url("../images/map/marker.svg");
             background-size: contain;
             background-repeat: no-repeat;
             width: 67px;
@@ -45,7 +45,7 @@
             filter: drop-shadow(2px 4px 15px rgba(6, 12, 70, 0.15));
             cursor: pointer;
             &:hover {
-                background-image: url("../../../../assets/images/map/marker-red.svg");
+                background-image: url("../images/map/marker-red.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 67px;
@@ -64,7 +64,7 @@
                 bottom: 0;
                 left: 18%;
                 right: 0;
-                background-image: url("../../../../assets/images/map/eagle.png");
+                background-image: url("../images/map/eagle.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 43px;
@@ -76,7 +76,7 @@
             bottom: 0;
             left: 75%;
             .map__pin__img {
-                background-image: url("../../../../assets/images/map/panda.png");
+                background-image: url("../images/map/panda.png");
             }
         }
     }
@@ -251,7 +251,7 @@
                     width: 34px;
                     height: 47px;
                     &:hover {
-                        background-image: url("../../../../assets/images/map/small-red-pin.svg");
+                        background-image: url("../images/map/small-red-pin.svg");
                         background-repeat: no-repeat;
                         width: 34px;
                         height: 47px;
@@ -265,7 +265,7 @@
                     top: 15%;
                     left: 75%;
                     .map__pin__img {
-                        background-image: url("../../../../assets/images/map/panda.png");
+                        background-image: url("../images/map/panda.png");
                     }
                 }
             }

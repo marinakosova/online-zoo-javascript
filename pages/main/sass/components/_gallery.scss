@@ -7,7 +7,6 @@
     overflow: hidden;
     .hero-top__carousel__container {
         height: auto;
-        //overflow: hidden;
         .carousel__item {
             &.watch__slider__image_notActive {
                 display: none;
@@ -20,13 +19,11 @@
         }
         .item__description {
             position: relative;
-            cursor: pointer;
             & img {
                 min-width: 140px;
                 width: -webkit-fill-available;
                 width: fill-available;
                 margin: 0 em(23);
-                //filter: drop-shadow(5px 4px 50px rgba(152, 157, 198, 0.25));
             }
             &:hover {
                 img {
